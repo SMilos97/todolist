@@ -2,12 +2,10 @@
 let taskInput = document.getElementById('new-task');
 let allTasks = document.querySelector('.all-tasks');
 const btnAdd = document.getElementById('create-task');
-
 //Functions
 function addTask (event){
     event.preventDefault()
     let inputValue = taskInput.value;
-
     if(inputValue == ''){
         alert('Please write task')
     }else {
@@ -17,7 +15,6 @@ function addTask (event){
                                 </li>`;
         taskInput.value = '';
         taskInput.focus();
-        
         let tasks = document.querySelectorAll('.task');
         for (let i = 0; i < tasks.length; i++){
             tasks[i].onclick = function(){
@@ -35,7 +32,6 @@ function addTask (event){
 
     }
 }
-
 function writeOnEnter(event){
     event.preventDefault();
     if (event.keyCode == 13){
@@ -43,9 +39,6 @@ function writeOnEnter(event){
         taskInput.focus();
     }
 }
-
-
 //Event listeners
 btnAdd.addEventListener('click', addTask);
-
-taskInput.addEventListener('keyup', writeOnEnter)
+taskInput.addEventListener('keyup', writeOnEnter);
