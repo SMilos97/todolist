@@ -87,9 +87,11 @@ body {
 
 .task p {
   font-size: 0.9rem;
-  color:rgb(166, 166, 228);
+  color: black;
 }
 
 .done {
   background-color: #7be697;
+  text-decoration: line-through;
+  color: black;
 }
