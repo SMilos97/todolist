@@ -18,8 +18,7 @@ function addTask (event){
         let tasks = document.querySelectorAll('.task');
         for (let i = 0; i < tasks.length; i++){
             tasks[i].onclick = function(){
-                this.classList.toggle('done');
-                
+                this.classList.toggle('done'); 
             }
         }
         let activeTasks = document.querySelectorAll('.delete');
